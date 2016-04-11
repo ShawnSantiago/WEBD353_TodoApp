@@ -1,4 +1,4 @@
-# WEBD353_TodoApp
+Todo App Assignment 
 
 A Node app built with Angular. For school assignment.
 
