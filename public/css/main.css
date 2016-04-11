@@ -1,0 +1,79 @@
+body {
+  background: #333;
+  color: #FFF;
+  font-family: "Helvetica", "Arial", sans-serif; }
+
+.main {
+  margin-top: 25px; }
+
+div {
+  position: relative;
+  top: 25px;
+  width: 75%;
+  margin: 0 auto; }
+  div h1 {
+    font-size: 40px;
+    text-align: center; }
+
+ul {
+  border-top: 10px solid #2980b9; }
+
+li, form {
+  font-size: 24px;
+  color: #2c3e50;
+  padding: 20px;
+  background: #ecf0f1;
+  border-top: 1px solid #2c3e50; }
+  li input, form input {
+    padding: 5px;
+    font-size: 24px;
+    border: 1px solid #2c3e50; }
+  li .checkbox, form .checkbox {
+    font-size: 20px; }
+  li .remove, form .remove {
+    float: right;
+    visibility: hidden; }
+  li .sort, form .sort {
+    visibility: hidden; }
+
+li:hover .remove, li:hover .sort {
+  visibility: visible; }
+
+form label {
+  font-size: 18px;
+  color: #2c3e50;
+  display: block; }
+form input {
+  width: 80%; }
+form input[type="submit"] {
+  background: #2980b9;
+  border: 1px solid #2c3e50;
+  border-radius: 10px;
+  width: 70px;
+  color: #FFF;
+  font-size: 24px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.checked {
+  text-decoration: line-through;
+  color: #95a5a6; }
+
+@media screen and (max-width: 700px) {
+  div {
+    width: 90%; }
+    div input {
+      width: 50%; }
+
+  form input {
+    width: 75%; }
+
+  li .remove {
+    float: right;
+    visibility: visible; }
+
+  li .sort {
+    visibility: visible; } }
+
+/*# sourceMappingURL=main.css.map */

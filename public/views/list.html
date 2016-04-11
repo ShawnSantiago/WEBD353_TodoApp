@@ -1,0 +1,20 @@
+<div>
+  <h1>To Do List</h1>
+  <div>
+    <ul class="main" id="sortable">
+      <li class="ui-state-default" ng-repeat="todo in todos">
+        <i class="fa fa-sort sort"></i>
+        <i class="fa checkbox" ng-class="{'fa-square-o': !checked, 'fa-check-square-o': checked}" ng-click="checked = !checked"></i>
+        <i class="fa fa-times-circle-o remove" ng-click="removeItem(todo.id)"></i>
+        <label ng-class="{'checked': checked}" ng-hide="editable" for="name" ng-click="editable = !editable" event-focus="click" event-focus-id="{{todo.id}}" ng-bind="todo.firstname"></label>
+        <input ng-hide="!editable" ng-blur="editable = false" id="{{todo.id}}" rel="name" type="text" ng-model="todo.firstname" />
+      </li>
+    </ul>
+    <form ng-submit="addTodo(newItem)" >
+      <label for="addItem">Add Task:</label>
+      <input rel="addItem" type="text" ng-model="newItem" />
+      <!--<button ng-click="addTodo(newItem)"><i class="fa fa-plus"></i></button>-->
+      <input type="submit" id="submit" value="Add" />
+    </form>
+  </div>  
+</div>
