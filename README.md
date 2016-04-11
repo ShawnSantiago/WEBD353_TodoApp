@@ -1,4 +1,4 @@
-Todo App Assignment 
+#Todo App Assignment 
 
 A Node app built with Angular. For school assignment.
 
